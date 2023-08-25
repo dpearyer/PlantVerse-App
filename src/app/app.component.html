@@ -1,1 +1,7 @@
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div class="container">
+  <form [formGroup]="searchForm" 
+  class="searchBar" 
+  (ngSubmit)="onSearchSubmit()">
+    <input type="text" placeholder="search" formControlName="searchValue" class="searchBarInput">
+  </form>
+</div>
