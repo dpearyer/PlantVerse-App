@@ -1,0 +1,2 @@
+filteredPlantList: PlantType[]=[];
+
