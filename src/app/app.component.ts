@@ -9,6 +9,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls:['./app.component.css'],
 })
 export class AppComponent implements OnInit{
+  title="PlantVerse"
   searchValue='';
   plants: PlantInterface[]=[];
   searchForm=this.fb.nonNullable.group({

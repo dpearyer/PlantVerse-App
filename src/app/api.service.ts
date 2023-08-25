@@ -8,7 +8,7 @@ export class PlantService{
     constructor(private http:HttpClient){}
     getPlants(): Observable<PlantInterface[]>{
         return this.http.get<PlantInterface[]>(
-            'https://perenual.com/api/species-list?page=1&key=sk-5KAd64e7d42c60da01977?title_like=${searchValue}'
-                );
+            'https://perenual.com/api/species-list?title_like=${searchValue}key=[sk-5KAd64e7d42c60da01977]&q=monstera'
+            );
             }
         }
