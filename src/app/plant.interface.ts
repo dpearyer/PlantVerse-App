@@ -1,4 +1,5 @@
 export interface PlantInterface{
+            
             "id": string,
             "common_name": string,
             "scientific_name": [

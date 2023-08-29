@@ -1,0 +1,25 @@
+.container{
+    margin: 0 auto;
+    width: 70%;
+    margin: top 10px;
+    background: #45753D;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBarClear{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.searchBarInput{
+    height: 60px;
+    width: 900px;
+    border-radius: 39px;
+    background: #FCF6F6;
+    font-size: 16px;
+    color: black;}

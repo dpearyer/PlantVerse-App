@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PlantService } from './api.service';
 import { PlantInterface } from './plant.interface';
 import { FormBuilder } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',

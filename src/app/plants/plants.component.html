@@ -1,0 +1,26 @@
+<div>
+    <app-search (textChanged)="onTextChanged($event)"></app-search>
+    <app-filter>
+        [native-georgia]="getNativePlant()"
+        [non-native-georgia]="getNonNativePlant()"
+    </app-filter>
+</div>
+    <ng-container *ngFor="let plant of plants">
+        <div class="plant-container" >
+            <div class="course-card">
+                <div>
+                    <img src=""course.image" style="width:220px; height:140px;" >
+                </div>
+                <div class="plant-name"><h4>{{plant.name}}</h4></div>
+                <div class="plant-description"><p>{{plant.description.slice(0,80)}}</p></div>
+                <div class="details">
+                    <div class="plant-type" [ngStyle]="{color:plant.type === 'native-georgia'}">{{plant.type}}</div>
+                    
+                </div>
+                <div class="plant-buttons">
+                    <button class="btn btn-add">+</button>
+                </div>
+            </div>
+        </div>
+
+    </ng-container>
