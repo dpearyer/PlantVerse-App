@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter} from '@angular/core';
 
 @Component({
     selector: 'app-plants',
@@ -46,9 +46,10 @@ onRadioButtonChange(data:string){
     this.plantsRadioButton=data;
 }
 
+
 onTextChanged(searchValue: string){
     this.searchText=searchValue;
-    console.log(this.searchText);
+    //console.log(this.searchText);
 }
 
 }
